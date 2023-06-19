@@ -1,4 +1,4 @@
-# Project Name Here
+# Ball Tracking Robot
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
@@ -76,6 +76,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 # Starter Project
 My starter project is the game Simon. This game flashes LEDs and the player is supposed to memorize and repeat the pattern. With each press on the button pad, the corresponding LED lights up and a buzzing sound is played. In this project, I learned about the function of different components that I had never used before, more specifically, microcontrollers and decoupling capacitors. One thing that I had a difficult time with was desoldering and this helped me realize just how hard it is to take a component out of a PCB once it has been soldered in.
+
+https://www.sparkfun.com/products/10547
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQZZTsq8bbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
