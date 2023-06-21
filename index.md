@@ -6,10 +6,10 @@
 | Alex L. | Sequoia High School | Mechanical Engineering | Incoming Sophomore
 
   
-<--- # Final Milestone -->
+<---# Final Milestone-->
 
 
-<--- # Second Milestone -->
+<---# Second Milestone-->
 
 
 # First Milestone
@@ -17,10 +17,10 @@ My first milestone was assembling the physical portion of the ball tracking robo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ih8gcHIPG-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<--- # Schematics --> 
+<---# Schematics--> 
 
 
-<--- # Code -->
+<---# Code-->
 
 
 # Bill of Materials
