@@ -27,9 +27,7 @@ My first milestone was assembling the physical portion of the ball tracking robo
 
 # Bill of Materials
 | **Part** | **Note** | **Price** | **Link** |
-| --- | --- | --- | --- |
 | 1 Raspberry Pi 4 | Main hub for mechanical components of the robot | $124.99 | <a href="https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TD42S27/"> Link </a> |
-| --- | --- | --- | --- |
 | 1 Micro SD Card | Provides internal storage for the Raspberry Pi | $19.99 | <a href="https://www.amazon.com/SanDisk-micro-Memory-Card-Tablets/dp/B013TMNKAW/ref=asc_df_B013TMNKAW/?tag=hyprod 20&linkCode=df0&hvadid=312026001792&hvpos=&hvnetw=g&hvrand=6885881945781783765&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032183&hvtargid=pla-570982703758&psc=1/"> Link </a> |
 | 1 H-Bridge | Powers the motors on the robot | $6.99 | <a href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6/ref=asc_df_B014KMHSW6/?tag=hyprod-20&linkCode=df0&hvadid=167139094796&hvpos=&hvnetw=g&hvrand=9827173619272994604&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032171&hvtargid=pla-306436938191&psc=1/"> Link </a> |
 | 1 Breadboard | Builds temporary circuits | $5.99 | <a href="https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5×8-2×0-85cm/dp/B0135IQ0ZC/ref=asc_df_B0135IQ0ZC/?tag=hyprod-20&linkCode=df0&hvadid=198091709182&hvpos=&hvnetw=g&hvrand=5812493995046974704&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032183&hvtargid=pla-407203040794&psc=1/"> Link </a> |
