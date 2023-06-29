@@ -46,7 +46,7 @@ My first milestone was assembling the physical portion of the ball tracking robo
 |:--:|:--:|:--:|:--:|
 | 1 Screw Driver Kit | Tightens/loosens screws on the robot | $6.57 | <a href="https://www.amazon.com/Precision-Screwdriver-Screwdrivers-Watchmaker-Electronic/dp/B0BFQK5FVR/ref=asc_df_B0BFQK5FVR/?tag=hyprod-20&linkCode=df0&hvadid=642117690907&hvpos=&hvnetw=g&hvrand=4331594184654728423&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032183&hvtargid=pla-1932769940359&psc=1&gclid=CjwKCAjw-b-kBhB-EiwA4fvKrE_5pwfP_-3qlOAAvzoQTmotyUPMkTqlHCV0bAWt41AqeLGUcLoBGhoCzP4QAvD_BwE"> Link </a> |
 |:--:|:--:|:--:|:--:|
-| 1 Jumper Wire Set | Connect circuits andd transfer voltage | $9.99 | <a href="https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/"> Link </a> |
+| 1 Jumper Wire Set | Connects circuits andd transfer voltage | $9.99 | <a href="https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/"> Link </a> |
 |:--:|:--:|:--:|:--:|
 
 # Starter Project
