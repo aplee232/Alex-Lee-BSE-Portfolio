@@ -26,6 +26,7 @@ My first milestone was assembling the physical portion of the ball tracking robo
 
 
 # Bill of Materials
+
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | 1 Raspberry Pi 4 | Main hub for mechanical components of the robot | $124.99 | <a href="https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TD42S27/"> Link </a> |
