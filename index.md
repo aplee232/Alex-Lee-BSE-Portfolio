@@ -28,12 +28,6 @@ My first milestone was assembling the physical portion of the ball tracking robo
 # Bill of Materials
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-
-| **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
 | 1 Raspberry Pi 4 | Main hub for mechanical components of the robot | $124.99 | <a href="https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TD42S27/"> Link </a> |
 |:--:|:--:|:--:|:--:|
 | 1 Micro SD Card | Provides internal storage for the Raspberry Pi | $19.99 | <a href="https://www.amazon.com/SanDisk-micro-Memory-Card-Tablets/dp/B013TMNKAW/ref=asc_df_B013TMNKAW/?tag=hyprod 20&linkCode=df0&hvadid=312026001792&hvpos=&hvnetw=g&hvrand=6885881945781783765&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9032183&hvtargid=pla-570982703758&psc=1/"> Link </a> |
