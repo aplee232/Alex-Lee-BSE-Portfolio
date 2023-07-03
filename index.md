@@ -9,8 +9,10 @@
 <!---# Final Milestone-->
 
 
-<!---# Second Milestone-->
+# Second Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tGEwsnJFgCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+My second milestone was getting my PiCamera to detect the red ball with OpenCV. For the image analysis, my code takes each frame and masks it so that the PiCamera only detects the red color from the ball. It then detects and dilates the blob that does not get filtered out by the mask. The largest blob is then bound to a blue rectangle in the image analysis window, detecting the center of the rectangle which will be used in my third milestone. This code was something I had a very difficult time in as I have very little to no experience in coding. At first, I was just following and correcting any error codes that showed up, however in this process, I accidentally broke other functions in the code, rendering the whole code invalid. I was able to overcome this challenge with the help of the instructors and another student who is doing the same project. I learned a lot of patience through this milestone and that most things will not go right the first or second time. Perseverance and continuing to try different methods to fix problems is very time consuming, yet very rewarding in the end. My next milestone will be to set up the motors so that the robot can follow the ball after it detects the red ball.
 
 # First Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ih8gcHIPG-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
