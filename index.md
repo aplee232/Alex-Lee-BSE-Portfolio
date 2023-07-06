@@ -1,5 +1,5 @@
 # Ball Tracking Robot
-
+My project is a ball tracking robot, which as indicated by the name, tracks and follows a red ball. This robot utilizes computer vision in order to find and track an object with a fixed color.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
