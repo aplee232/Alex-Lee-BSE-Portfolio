@@ -1,31 +1,29 @@
 # Ball Tracking Robot
 My project is a ball tracking robot, which as indicated by the name, tracks and follows a red ball. This robot utilizes computer vision in order to find and track an object with a fixed color.
-
+<br/>
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Alex L. | Sequoia High School | Mechanical Engineering | Incoming Sophomore
-
-  
+<br/>
 # Final Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uMDJSQJW4MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br/><br/>
+<br/>
 My third milestone was getting the robot to actually track the red ball. It does this by communicating with an ultrasonic sensor, which in combination with the PiCamera, is able to find the location of the ball. The ultrasonic sensor has two transducers, one transmitter and one receiver/ One sends out an ultrasonic pulse which bounces off objects, returning back to the sensor. The sensor is coded to measure the time it takes for this “echo” to return, calculating distance with a basic Distance=Speed*Time equation, Distance=(pulse duration)*17150. The number, 17150, is the speed of sound at sea level (34300cm/s) divided by two because the distance is doubled (when the pulse is sent out and when it is reflected back). In combination with the code from the PiCamera, the ultrasonic sensor only detects the red ball, reporting values for its distance from the sensor. 
 
 The second part of this milestone was the DC motors. Each motor requires 6V, however the base robot only comes with one battery pack which has only 6V. Since the motors are in series, the circuit requires a total of 12V, this forced me to add a second 6V battery pack which was connected in series.   I also connected the H-bridge, a device used to control speed and direction for multiple motors, to one of the ground pins on the Raspberry Pi, allowing the Pi to communicate with the H-bridge, telling the motors when to turn on. The batteries and motors are also connected to the H-bridge through the three ports that are on three sides of the H-bridge. There are six pins on an H-bridge, ENA, IN1, IN2, IN3, IN4 and ENB. The EN pins control speed while the IN pins control direction for their corresponding motors. 
 
 The main problem I faced during this milestone was the inaccuracy of the original build guide. This was true in both the physical build as well as the code. For me, the schematic shown in the original building guide was mirrored and did not work. It was missing several jumper wires, had pointless ultrasonic sensors, and overall it just did not work for me. I ended up following separate guides for both the ultrasonic sensor and the H-bridge. The main differences were removing two of the ultrasonic sensors, powering the breadboard (for the ultrasonic sensor) and connecting the H-bridge to ground. The code was another thing that did not work for me; the pins were assigned to the sensors and motors incorrectly, the sleep functions were too short (making the movements very choppy) and a few other functions were formatted incorrectly.
-
-<br/><br/>
+<br/>
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGEwsnJFgCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br/><br/>
+<br/>
 My second milestone was getting my PiCamera to detect the red ball with OpenCV. For the image analysis, my code takes each frame and masks it so that the PiCamera only detects the red color from the ball. It then detects and dilates the blob that does not get filtered out by the mask. The largest blob is then bound to a blue rectangle in the image analysis window, detecting the center of the rectangle which will be used in my third milestone. This code was something I had a very difficult time in as I have very little to no experience in coding. At first, I was just following and correcting any error codes that showed up, however in this process, I accidentally broke other functions in the code, rendering the whole code invalid. I was able to overcome this challenge with the help of the instructors and another student who is doing the same project. I learned a lot of patience through this milestone and that most things will not go right the first or second time. Perseverance and continuing to try different methods to fix problems is very time consuming, yet very rewarding in the end. My next milestone will be to set up the motors so that the robot can follow the ball after it detects the red ball.
-
+<br/>
 # First Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ih8gcHIPG-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br/><br/>
+<br/>
 My first milestone was assembling the physical portion of the ball tracking robot. This included the wiring of all of the motors, sensors and batteries into the Raspberry Pi, H-Bridge and breadboard. The most important part of this process was making sure all of the pins and wires were firmly attached to the different boards. It was important to do this as you do not want the wires disconnecting while the robot is in motion, potentially breaking the connection to important components. It was especially difficulty as the male and female connector cables fit very loose on the Raspberry Pi and breadboard. My next milestone will be to get the motors to function so the robot will be able to follow the ball in the final design.
-<br/><br/>
+<br/>
 
 <!---# Schematics--> 
 
@@ -57,8 +55,8 @@ My first milestone was assembling the physical portion of the ball tracking robo
 |:--:|:--:|:--:|:--:|
 | 1 Jumper Wire Set | Connects circuits andd transfer voltage | $9.99 | <a href="https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/"> Link </a> |
 |:--:|:--:|:--:|:--:|
-<br/><br/>
+<br/>
 # Starter Project
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQZZTsq8bbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br/><br/>
+<br/
 My starter project is the game Simon. This game flashes LEDs and the player is supposed to memorize and repeat the pattern. With each press on the button pad, the corresponding LED lights up and a buzzing sound is played. In this project, I learned about the function of different components that I had never used before, more specifically, microcontrollers and decoupling capacitors. One thing that I had a difficult time with was desoldering and this helped me realize just how hard it is to take a component out of a PCB once it has been soldered in.
