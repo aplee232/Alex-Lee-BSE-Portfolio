@@ -6,7 +6,13 @@ My project is a ball tracking robot, which as indicated by the name, tracks and 
 | Alex L. | Sequoia High School | Mechanical Engineering | Incoming Sophomore
 
   
-<!---# Final Milestone-->
+# Final Milestone
+My third milestone was getting the robot to actually track the red ball. It does this by communicating with an ultrasonic sensor, which in combination with the PiCamera, is able to find the location of the ball. The ultrasonic sensor has two transducers, one transmitter and one receiver/ One sends out an ultrasonic pulse which bounces off objects, returning back to the sensor. The sensor is coded to measure the time it takes for this “echo” to return, calculating distance with a basic Distance=Speed*Time equation, Distance=(pulse duration)*17150. The number, 17150, is the speed of sound at sea level (34300cm/s) divided by two because the distance is doubled (when the pulse is sent out and when it is reflected back). In combination with the code from the PiCamera, the ultrasonic sensor only detects the red ball, reporting values for its distance from the sensor. 
+
+The second part of this milestone was the DC motors. Each motor requires 6V, however the base robot only comes with one battery pack which has only 6V. Since the motors are in series, the circuit requires a total of 12V, this forced me to add a second 6V battery pack which was connected in series.   I also connected the H-bridge, a device used to control speed and direction for multiple motors, to one of the ground pins on the Raspberry Pi, allowing the Pi to communicate with the H-bridge, telling the motors when to turn on. The batteries and motors are also connected to the H-bridge through the three ports that are on three sides of the H-bridge. There are six pins on an H-bridge, ENA, IN1, IN2, IN3, IN4 and ENB. The EN pins control speed while the IN pins control direction for their corresponding motors. 
+
+The main problem I faced during this milestone was the inaccuracy of the original build guide. This was true in both the physical build as well as the code. For me, the schematic shown in the original building guide was mirrored and did not work. It was missing several jumper wires, had pointless ultrasonic sensors, and overall it just did not work for me. I ended up following separate guides for both the ultrasonic sensor and the H-bridge. The main differences were removing two of the ultrasonic sensors, powering the breadboard (for the ultrasonic sensor) and connecting the H-bridge to ground. The code was another thing that did not work for me; the pins were assigned to the sensors and motors incorrectly, the sleep functions were too short (making the movements very choppy) and a few other functions were formatted incorrectly.
+
 
 
 # Second Milestone
