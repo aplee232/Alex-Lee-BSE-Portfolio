@@ -50,7 +50,6 @@ My first milestone was assembling the physical portion of the ball tracking robo
 |:--:|:--:|:--:|:--:|
 | 1 Jumper Wire Set | Connects circuits andd transfer voltage | $9.99 | <a href="https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/"> Link </a> |
 |:--:|:--:|:--:|:--:|
-
 # Starter Project
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQZZTsq8bbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 My starter project is the game Simon. This game flashes LEDs and the player is supposed to memorize and repeat the pattern. With each press on the button pad, the corresponding LED lights up and a buzzing sound is played. In this project, I learned about the function of different components that I had never used before, more specifically, microcontrollers and decoupling capacitors. One thing that I had a difficult time with was desoldering and this helped me realize just how hard it is to take a component out of a PCB once it has been soldered in.
