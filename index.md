@@ -35,7 +35,8 @@ My first milestone was assembling the physical portion of the ball tracking robo
 The most important part of this process was making sure all of the pins and wires were firmly attached to the different boards. It was important to do this as you do not want the wires disconnecting while the robot is in motion, potentially breaking the connection to important components. It was especially difficulty as the male and female connector cables fit very loose on the Raspberry Pi and breadboard. My next milestone will be to get the motors to function so the robot will be able to follow the ball in the final design.
 
 
-# Schematics 
+# Schematics
+The circuit for the ball tracking robot is based on the below image. A few changes were made: pins from the H-bridge to Raspberry Pi were changed to pins 31, 33, 35, 37. The breadboard is powered by the Raspberry Pi through power pin 2 and ground pin 6. Ground pin 11 is plugged into the H-bridge. Both left and right ultrasonic sensors were removed.
 ![alt text](robot_schematic.png)
 ![alt text](arm_schematic.png)
 
