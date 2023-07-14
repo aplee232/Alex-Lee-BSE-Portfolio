@@ -39,12 +39,19 @@ The most important part of this process was making sure all of the pins and wire
 
 
 # Code
+
 from picamera.array import PiRGBArray
+
 from picamera import PiCamera
+
 import RPi.GPIO as GPIO
+
 import time
+
 import cv2
+
 import cv2 as cv
+
 import numpy as np
 
 GPIO.setmode(GPIO.BCM)
