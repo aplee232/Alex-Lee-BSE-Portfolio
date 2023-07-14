@@ -1,1 +1,1 @@
-
+This folder contains the schematic and code for the ball tracking robot as well as the schematic for the robot arm. The schematic for the robot differs slightly from the image; the left and right ultrasonic sensors are removed (they do not do anything in the code), the breadboard is powered by the Raspberry Pi using power pin 2 and ground pin 6, the H-bridge (IN1-IN4) are conneted to pins 31, 33, 35, 37 and the H-bridge port on the same side as the those pins is connected to ground pin 9 on the Raspberry Pi. The code for the robot essentially 
