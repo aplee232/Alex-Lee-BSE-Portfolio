@@ -73,5 +73,7 @@ My starter project is the game Simon. This game flashes LEDs and the player is s
 
 # Links to Guides/Manufacturers
 [Ball Tracking Robot](https://www.hackster.io/junejarohan/ball-tracking-robot-7a9865)
+|:--:|:--:|:--:|:--:|
 [Robot Arm](https://github.com/Cokoino/CKK0006)
+|:--:|:--:|:--:|:--:|
 [Simon Says](https://www.sparkfun.com/products/10547)
