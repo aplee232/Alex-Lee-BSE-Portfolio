@@ -23,12 +23,16 @@ The main problem I faced during this milestone was the inaccuracy of the origina
 # Second Milestone: Color Tracking
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGEwsnJFgCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-My second milestone was getting my PiCamera to detect the red ball with OpenCV. For the image analysis, my code takes each frame and masks it so that the PiCamera only detects the red color from the ball. It then detects and dilates the blob that does not get filtered out by the mask. The largest blob is then bound to a blue rectangle in the image analysis window, detecting the center of the rectangle which will be used in my third milestone. This code was something I had a very difficult time in as I have very little to no experience in coding. At first, I was just following and correcting any error codes that showed up, however in this process, I accidentally broke other functions in the code, rendering the whole code invalid. I was able to overcome this challenge with the help of the instructors and another student who is doing the same project. I learned a lot of patience through this milestone and that most things will not go right the first or second time. Perseverance and continuing to try different methods to fix problems is very time consuming, yet very rewarding in the end. My next milestone will be to set up the motors so that the robot can follow the ball after it detects the red ball.
+My second milestone was getting my PiCamera to detect the red ball with OpenCV. For the image analysis, my code takes each frame and masks it so that the PiCamera only detects the red color from the ball. It then detects and dilates the blob that does not get filtered out by the mask. The largest blob is then bound to a blue rectangle in the image analysis window, detecting the center of the rectangle which will be used in my third milestone. 
+
+This code was something I had a very difficult time in as I have very little to no experience in coding. At first, I was just following and correcting any error codes that showed up, however in this process, I accidentally broke other functions in the code, rendering the whole code invalid. I was able to overcome this challenge with the help of the instructors and another student who is doing the same project. I learned a lot of patience through this milestone and that most things will not go right the first or second time. Perseverance and continuing to try different methods to fix problems is very time consuming, yet very rewarding in the end. My next milestone will be to set up the motors so that the robot can follow the ball after it detects the red ball.
 <br>
 # First Milestone: Robot Assembly
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ih8gcHIPG-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-My first milestone was assembling the physical portion of the ball tracking robot. This included the wiring of all of the motors, sensors and batteries into the Raspberry Pi, H-Bridge and breadboard. The most important part of this process was making sure all of the pins and wires were firmly attached to the different boards. It was important to do this as you do not want the wires disconnecting while the robot is in motion, potentially breaking the connection to important components. It was especially difficulty as the male and female connector cables fit very loose on the Raspberry Pi and breadboard. My next milestone will be to get the motors to function so the robot will be able to follow the ball in the final design.
+My first milestone was assembling the physical portion of the ball tracking robot. This included the wiring of all of the DC motors, ultrasonic sensors, PiCamera and batteries into the Raspberry Pi, H-Bridge and breadboard. The two motors are connected the two ports on each side of the H-bridge, which is connected to a separate 6V battery pack and wired to the Raspberry Pi. The three ultrasonic sensors have four pins each, two connect to the Raspberry Pi while the other two go to the breadboard. The PiCamera plugs directly onto the camera port on the Raspberry Pi. Finally, all of the components are mounted on a plastic chasis.
+
+The most important part of this process was making sure all of the pins and wires were firmly attached to the different boards. It was important to do this as you do not want the wires disconnecting while the robot is in motion, potentially breaking the connection to important components. It was especially difficulty as the male and female connector cables fit very loose on the Raspberry Pi and breadboard. My next milestone will be to get the motors to function so the robot will be able to follow the ball in the final design.
 
 
 <!---# Schematics--> 
@@ -62,7 +66,12 @@ My first milestone was assembling the physical portion of the ball tracking robo
 | 1 Jumper Wire Set | Connects circuits andd transfer voltage | $9.99 | <a href="https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/"> Link </a> |
 |:--:|:--:|:--:|:--:|
 
-# Starter Project
+# Starter Project: Simon Says
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQZZTsq8bbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 My starter project is the game Simon. This game flashes LEDs and the player is supposed to memorize and repeat the pattern. With each press on the button pad, the corresponding LED lights up and a buzzing sound is played. In this project, I learned about the function of different components that I had never used before, more specifically, microcontrollers and decoupling capacitors. One thing that I had a difficult time with was desoldering and this helped me realize just how hard it is to take a component out of a PCB once it has been soldered in.
+
+# Links to Guides/Manufacturers
+[Ball Tracking Robot](https://www.hackster.io/junejarohan/ball-tracking-robot-7a9865)
+[Robot Arm](https://github.com/Cokoino/CKK0006)
+[Simon Says](https://www.sparkfun.com/products/10547)
