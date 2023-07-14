@@ -72,6 +72,7 @@ The most important part of this process was making sure all of the pins and wire
 My starter project is the game Simon. This game flashes LEDs and the player is supposed to memorize and repeat the pattern. With each press on the button pad, the corresponding LED lights up and a buzzing sound is played. In this project, I learned about the function of different components that I had never used before, more specifically, microcontrollers and decoupling capacitors. One thing that I had a difficult time with was desoldering and this helped me realize just how hard it is to take a component out of a PCB once it has been soldered in.
 
 # Links to Guides/Manufacturers
+|:--:|:--:|:--:|:--:|
 [Ball Tracking Robot](https://www.hackster.io/junejarohan/ball-tracking-robot-7a9865)
 |:--:|:--:|:--:|:--:|
 [Robot Arm](https://github.com/Cokoino/CKK0006)
