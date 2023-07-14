@@ -1,5 +1,5 @@
 # Ball Tracking Robot
-My project is a ball tracking robot, which as indicated by the name, tracks and follows a red ball. This robot utilizes computer vision in order to find and track an object with a fixed color.
+This ball tracking robot does exactly as its name indicates, it tracks and follows a ball. This robot uses a Raspberry Pi and PiCamera for computer vision in order to find and track an object of a fixed color. It then uses an ultrasonic sensor and DC motors to first find where the ball is, then follow it.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
