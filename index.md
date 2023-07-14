@@ -78,3 +78,4 @@ My starter project is the game Simon. This game flashes LEDs and the player is s
 [Robot Arm](https://github.com/Cokoino/CKK0006)
 |:--:|:--:|:--:|:--:|
 [Simon Says](https://www.sparkfun.com/products/10547)
+|:--:|:--:|:--:|:--:|
