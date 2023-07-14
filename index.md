@@ -36,8 +36,8 @@ The most important part of this process was making sure all of the pins and wire
 
 
 # Schematics 
-![alt text](Untitled.png)
-![alt text](arm wiring diagram.pdf)
+![alt text](robot_schematic.png)
+![alt text](arm_schematic.png)
 
 # Code
 
