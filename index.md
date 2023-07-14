@@ -40,7 +40,7 @@ The most important part of this process was making sure all of the pins and wire
 
 # Code
 
-from picamera.array import PiRGBArray     #As there is a resolution problem in raspberry pi, will not be able to capture frames by VideoCapture
+from picamera.array import PiRGBArray
 from picamera import PiCamera
 import RPi.GPIO as GPIO
 import time
@@ -48,19 +48,16 @@ import cv2
 import cv2 as cv
 import numpy as np
 
-#hardware work
 GPIO.setmode(GPIO.BCM)
 
-TRIG = 23      #Front ultrasonic sensor
+TRIG = 23
 ECHO = 22
 
-MOTOR1B = 19  #Left Motor pins 1B=2, 1E=1 on H-bridge
+MOTOR1B = 19
 MOTOR1E = 26
 
-MOTOR2B = 13  #Right Motor pins 2B=4, 2E=3
+MOTOR2B = 13
 MOTOR2E = 6
-
-#LED_PIN = 13  #If it finds the ball, then it will light up the led
 
 GPIO.setwarnings(False)
 GPIO.setup(TRIG, GPIO.OUT)
@@ -127,9 +124,7 @@ def stop():
       GPIO.output(MOTOR2E, False)
       GPIO.output(MOTOR2B, False)
    
-     
-#Image analysis work
-def segment_colour(frame):    #returns only the red colors in the frame
+def segment_colour(frame):
     hsv_roi =  cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     mask_1 = cv2.inRange(hsv_roi, np.array([160, 160,10]), np.array([190,255,255]))
     ycr_roi=cv2.cvtColor(frame,cv2.COLOR_BGR2YCrCb)
@@ -140,7 +135,6 @@ def segment_colour(frame):    #returns only the red colors in the frame
     kern_erode  = np.ones((3,3),np.uint8)
     mask= cv2.erode(mask,kern_erode)      #Eroding
     mask=cv2.dilate(mask,kern_dilate)     #Dilating
-    #cv2.imshow('mask',mask)
     return mask
 
 def find_blob(blob): #returns the red colored circle
@@ -165,8 +159,6 @@ def target_hist(frame):
     hist=cv2.calcHist([hsv_img],[0],None,[50],[0,255])
     return hist
 
-#CAMERA CAPTURE
-#initialize the camera and grab a reference to the raw camera capture
 camera = PiCamera()
 camera.resolution = (160, 128)
 camera.framerate = 16
@@ -175,7 +167,6 @@ rawCapture = PiRGBArray(camera, size=(160, 128))
 time.sleep(0.001)
  
 for image in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-      #grab the raw NumPy array representing the image, then initialize the timestamp and occupied/unoccupied text
       frame = image.array
       frame=cv2.flip(frame,1)
       global centre_x
@@ -187,7 +178,6 @@ for image in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
       loct,area = find_blob(mask_red)
       x,y,w,h = loct
      
-      #distance coming from front ultrasonic sensor
       distanceC = sonar(TRIG,ECHO)
              
       if (w*h) < 10:
@@ -219,14 +209,13 @@ for image in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
             print("distanceC = ", distanceC)
             print("area = ", area)
             if(area<initial):
-                  if(distanceC<10):                        #otherwise it moves forward
+                  if(distanceC<10):
                         forward()
                         time.sleep(0.00625)
             elif(area>=initial):
                   initial2=6700
                   if(area<initial2):
                         if(distanceC>10):
-                              #it brings coordinates of ball to center of camera's imaginary axis.
                               if(centre_x<=-20 or centre_x>=20):
                                     if(centre_x<0):
                                           flag=0
@@ -245,13 +234,11 @@ for image in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
                               time.sleep(0.01)
 
                   else:
-                        #if it founds the ball and it is too close it lights up the led.
-                        #GPIO.output(LED_PIN,GPIO.HIGH)
                         time.sleep(0.1)
                         stop()
                         time.sleep(0.1)
       cv2.imshow("draw",frame)    
-      rawCapture.truncate(0)  # clear the stream in preparation for the next frame
+      rawCapture.truncate(0)
          
       if(cv2.waitKey(1) & 0xff == ord('q')):
             break
