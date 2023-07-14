@@ -40,7 +40,6 @@ The most important part of this process was making sure all of the pins and wire
 
 # Code
 
-# import the necessary packages
 from picamera.array import PiRGBArray     #As there is a resolution problem in raspberry pi, will not be able to capture frames by VideoCapture
 from picamera import PiCamera
 import RPi.GPIO as GPIO
@@ -63,16 +62,13 @@ MOTOR2E = 6
 
 #LED_PIN = 13  #If it finds the ball, then it will light up the led
 
-# Set pins as output and input
 GPIO.setwarnings(False)
 GPIO.setup(TRIG, GPIO.OUT)
 GPIO.setup(ECHO, GPIO.IN)
 #GPIO.setup(LED_PIN,GPIO.OUT)
 
-# Set trigger to False (Low)
 GPIO.output(TRIG, False)
 
-# Allow module to settle
 def sonar(TRIG,ECHO):
     GPIO.output(TRIG, True)
     time.sleep(0.00001)
@@ -176,10 +172,8 @@ camera.resolution = (160, 128)
 camera.framerate = 16
 rawCapture = PiRGBArray(camera, size=(160, 128))
 
-# allow the camera to warmup
 time.sleep(0.001)
  
-# capture frames from the camera
 for image in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
       #grab the raw NumPy array representing the image, then initialize the timestamp and occupied/unoccupied text
       frame = image.array
