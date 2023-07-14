@@ -6,7 +6,7 @@ This ball tracking robot does exactly as its name indicates, it tracks and follo
 | Alex L. | Sequoia High School | Mechanical Engineering | Incoming Sophomore
 
 ![alt text](Alex-L-Project.png)
-
+<br>
 # Modification: Robot Arm
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KS2ZzA_WXTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 My modification to my ball tracking robot is a robot arm. This kit by Cokoino is a a 4-axis robotic arm, propgrammed using an Arduino nano, moves using servo motors and controlled using a joystick controller. This was one of the easiest milestones/parts of this project because pretty much the entire kit worked when first assembled; it required significantly less troubleshooting compared to the other three milestones. One thing I needed to change from the original kit was the battery pack. This was because we did not have the two 18650 batteries that would fit into the original battery pack. I replaced it with a AA pack with 5 slots because the AA batteries supply much less voltage than the 18650s. 
